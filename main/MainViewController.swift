@@ -8,14 +8,12 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
-    let imageArr = ["person", "house","person.fill", "circle"]
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Table"
+        title = "_ISROI1"
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -41,12 +39,12 @@ class MainViewController: UIViewController {
 }
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imageArr.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newTableViewCell", for: indexPath) as! newTableViewCell
-        cell.imagePers.image = UIImage(systemName: imageArr[indexPath.row])
+        cell.imagePers.image = UIImage(named: "avatar")
         return cell
     }
     

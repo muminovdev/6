@@ -45,9 +45,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04199952293FC72B0082625A /* main */ = {
+			isa = PBXGroup;
+			children = (
+				04ABB2FE293ECDBC00512813 /* MainViewController.swift */,
+				04ABB2FF293ECDBC00512813 /* MainViewController.xib */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		04199953293FC7310082625A /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				04ABB302293ED01B00512813 /* newTableViewCell.swift */,
+				04ABB303293ED01B00512813 /* newTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		04ABB2DE293ECD6700512813 = {
 			isa = PBXGroup;
 			children = (
+				04199953293FC7310082625A /* cell */,
+				04199952293FC72B0082625A /* main */,
 				04ABB2E9293ECD6700512813 /* 6.12 dars */,
 				04ABB2E8293ECD6700512813 /* Products */,
 			);
@@ -67,10 +87,6 @@
 				04ABB2EA293ECD6700512813 /* AppDelegate.swift */,
 				04ABB2EC293ECD6700512813 /* SceneDelegate.swift */,
 				04ABB2EE293ECD6700512813 /* ViewController.swift */,
-				04ABB302293ED01B00512813 /* newTableViewCell.swift */,
-				04ABB303293ED01B00512813 /* newTableViewCell.xib */,
-				04ABB2FE293ECDBC00512813 /* MainViewController.swift */,
-				04ABB2FF293ECDBC00512813 /* MainViewController.xib */,
 				04ABB2F0293ECD6700512813 /* Main.storyboard */,
 				04ABB2F3293ECD6A00512813 /* Assets.xcassets */,
 				04ABB2F5293ECD6A00512813 /* LaunchScreen.storyboard */,
